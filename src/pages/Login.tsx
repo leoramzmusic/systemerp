@@ -50,10 +50,10 @@ export default function Login() {
               <span className="text-2xl font-bold text-white">A</span>
             </div>
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-              Hoş Geldiniz
+              Welcome
             </h1>
             <p className="text-gray-600 dark:text-gray-400">
-              Hesabınıza giriş yaparak devam edin
+              Log in to access the system
             </p>
           </div>
 
@@ -61,14 +61,17 @@ export default function Login() {
           <Card className="shadow-xl border-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm">
             <CardHeader className="space-y-1 pb-4">
               <CardTitle className="text-2xl font-semibold text-center">
-                Giriş Yap
+                Login
               </CardTitle>
               <CardDescription className="text-center">
-                E-posta ve şifrenizi girin
+                Enter your email and password to sign in
               </CardDescription>
             </CardHeader>
+
+
             <CardContent className="space-y-6">
-              {/* Social Login Buttons */}
+              {/* Social Login Buttons 
+              
               <div className="grid grid-cols-2 gap-3">
                 {socialLogins.map((social) => (
                   <Button
@@ -93,11 +96,12 @@ export default function Login() {
                   </span>
                 </div>
               </div>
+              */}
 
               {/* Login Form */}
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="email">E-posta</Label>
+                  <Label htmlFor="email">E-mail</Label>
                   <div className="relative">
                     <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                     <Input
@@ -111,7 +115,7 @@ export default function Login() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="password">Şifre</Label>
+                  <Label htmlFor="password">Password</Label>
                   <div className="relative">
                     <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
                     <Input
@@ -145,14 +149,14 @@ export default function Login() {
                       onCheckedChange={(checked) => setRememberMe(checked as boolean)}
                     />
                     <Label htmlFor="remember" className="text-sm">
-                      Beni hatırla
+                      Remember me
                     </Label>
                   </div>
                   <Link
                     to="/forgot-password"
                     className="text-sm text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
                   >
-                    Şifremi unuttum
+                    I Forgot my password
                   </Link>
                 </div>
 
@@ -164,10 +168,10 @@ export default function Login() {
                   {isLoading ? (
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      Giriş yapılıyor...
+                      Logging in...
                     </div>
                   ) : (
-                    "Giriş Yap"
+                    "Log In"
                   )}
                 </Button>
               </form>
@@ -175,13 +179,13 @@ export default function Login() {
               {/* Sign Up Link */}
               <div className="text-center text-sm">
                 <span className="text-muted-foreground">
-                  Hesabınız yok mu?{" "}
+                  Don't have an account?{" "}
                 </span>
                 <Link
                   to="/register"
                   className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
                 >
-                  Hemen kayıt olun
+                  Register now
                 </Link>
               </div>
             </CardContent>
@@ -189,16 +193,16 @@ export default function Login() {
 
           {/* Footer */}
           <div className="text-center mt-8 text-xs text-muted-foreground">
-            <p>© 2024 React19 Admin. Tüm hakları saklıdır.</p>
+            <p>© 2025 By Leo. All rights reserved.</p>
             <div className="flex justify-center gap-4 mt-2">
               <Link to="/privacy" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-                Gizlilik
+                Security
               </Link>
               <Link to="/terms" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-                Şartlar
+                Terms
               </Link>
               <Link to="/help" className="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-                Yardım
+                Help
               </Link>
             </div>
           </div>

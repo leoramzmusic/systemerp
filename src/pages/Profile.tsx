@@ -131,7 +131,7 @@ export default function Profile() {
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <Phone className="h-4 w-4 text-muted-foreground" />
-                    <span>+90 555 123 45 67 </span>
+                    <span>+90 555 123 45 67</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
                     <MapPin className="h-4 w-4 text-muted-foreground" />
