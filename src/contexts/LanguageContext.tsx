@@ -90,6 +90,14 @@ const translations = {
     "profile.position": "Pozisyon",
     "profile.department": "Departman",
     "profile.website": "Web Sitesi",
+    "profile.configprofile": "Profil Ayarları",
+    "profile.configprofile2": "Kişisel bilgilerinizi ve hesap ayarlarınızı güncelleyin",
+    "profile.name": "Adı",
+    "profile.secondname": "Göbek Adı",
+    "profile.lastname": "Soyadı",
+    "profile.surname": "Anne Adı",
+    "profile.visibilityprofiletittle": "Profil Görünürlüğü",
+    "profile.visibilityprofile": "Profilinizi diğer kullanıcılar görebilsin",
 
     // Notifications
     "notifications.all": "Tümü",
@@ -101,6 +109,8 @@ const translations = {
     "notifications.last24Hours": "Son 24 Saat",
     "notifications.last7Days": "Son 7 Gün",
     "notifications.last30Days": "Son 30 Gün",
+    "notifications.notificationsettings": "Bildirim Ayarları",
+    "notifications.notificationpreferences": "Bildirim tercihlerinizi ve kanallarınızı yapılandırın",
 
     // Analytics
     "analytics.overview": "Genel Bakış",
@@ -306,6 +316,14 @@ const translations = {
     "profile.position": "Position",
     "profile.department": "Department",
     "profile.website": "Website",
+    "profile.configprofile": "Profile Settings",
+    "profile.configprofile2": "Update your personal information and account settings",
+    "profile.name": "Name",
+    "profile.secondname": "Middle Name",
+    "profile.lastname": "Last Name",
+    "profile.surname": "Surname",
+    "profile.visibilityprofiletittle": "Profile Visibility",
+    "profile.visibilityprofile": "Let other users see your profile",
 
     // Notifications
     "notifications.all": "All",
@@ -317,6 +335,8 @@ const translations = {
     "notifications.last24Hours": "Last 24 Hours",
     "notifications.last7Days": "Last 7 Days",
     "notifications.last30Days": "Last 30 Days",
+    "notifications.notificationsettings": "Notification Settings",
+    "notifications.notificationpreferences": "Configure your notification preferences and channels",
 
     // Dashboard
     "dashboard.welcome": "Welcome",
@@ -440,6 +460,27 @@ const translations = {
     "profile.position": "Puesto",
     "profile.department": "Departamento",
     "profile.website": "Sitio Web",
+    "profile.configprofile": "Configuración del perfil",
+    "profile.configprofile2": "Actualice su información personal y la configuración de su cuenta",
+    "profile.name": "Primer nombre",
+    "profile.secondname": "Segundo nombre",
+    "profile.lastname": "Apellido paterno",
+    "profile.surname": "Apellido materno",
+    "profile.visibilityprofiletittle": "Visibilidad del perfil",
+    "profile.visibilityprofile": "Permite que otros usuarios vean tu perfil",
+
+    // Notificaciones
+    "notifications.all": "Todas",
+    "notifications.unread": "Sin leer",
+    "notifications.read": "Leídas",
+    "notifications.markAllRead": "Marcar todas como leídas",
+    "notifications.clearAll": "Borrar todas",
+    "notifications.noNotifications": "No se encontraron notificaciones",
+    "notifications.last24Hours": "Últimas 24 horas",
+    "notifications.last7Days": "Últimos 7 días",
+    "notifications.last30Days": "Últimos 30 días",
+    "notifications.notificationsettings": "Configuración de notificaciones",
+    "notifications.notificationpreferences": "Configura tus preferencias y canales de notificación",
 
     // Analytics
     "analytics.overview": "Resumen",
@@ -482,17 +523,6 @@ const translations = {
     "analytics.apr": "Abr",
     "analytics.may": "May",
     "analytics.jun": "Jun",
-
-    // Notifications
-    "notifications.all": "Todas",
-    "notifications.unread": "No leídas",
-    "notifications.read": "Leídas",
-    "notifications.markAllRead": "Marcar todas como leídas",
-    "notifications.clearAll": "Borrar todas",
-    "notifications.noNotifications": "No se encontraron notificaciones",
-    "notifications.last24Hours": "Últimas 24 Horas",
-    "notifications.last7Days": "Últimos 7 Días",
-    "notifications.last30Days": "Últimos 30 Días",
 
     // Dashboard
     "dashboard.welcome": "Bienvenido",

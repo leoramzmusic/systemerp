@@ -104,7 +104,7 @@ export default function AppLayout() {
                       <Globe className="h-4 w-4" />
                       EN
                     </SelectItem>
-
+    
                     <SelectItem value="tr" className="flex items-center gap-2">
                       <Globe className="h-4 w-4" />
                       TR
@@ -135,7 +135,7 @@ export default function AppLayout() {
               </div>
               
               <div className="hidden md:flex items-center">
-                <Input placeholder="Ara..." className="w-64" />
+                <Input placeholder={t('common.search')} className="w-64" />
               </div>
               
               <NotificationBell 

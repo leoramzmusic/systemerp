@@ -26,6 +26,7 @@ import {
   FileText,
   Settings
 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const activities = [
   {
@@ -80,6 +81,13 @@ const skills = [
 
 export default function Profile() {
   const canonical = typeof window !== "undefined" ? window.location.href : "";
+
+  const { language, setLanguage, t } = useLanguage();
+
+    const handleLanguageChange = (newLanguage: 'es' | 'tr' | 'en') => {
+    setLanguage(newLanguage);
+  };
+
 
   return (
     <div>
@@ -254,7 +262,7 @@ export default function Profile() {
                   <div className="flex justify-end">
                     <Button>
                       <Save className="h-4 w-4 mr-2" />
-                      Değişiklikleri Kaydet
+                      {t('settings.save')}
                     </Button>
                   </div>
                 </CardContent>

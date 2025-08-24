@@ -197,55 +197,63 @@ export default function Settings() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <User className="h-5 w-5" />
-                  Profil Ayarları
+                  {t('profile.configprofile')}
                 </CardTitle>
                 <CardDescription>
-                  Kişisel bilgilerinizi ve hesap ayarlarınızı güncelleyin
+                  {t('profile.configprofile2')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName">Ad</Label>
-                    <Input id="firstName" defaultValue="Ahmet" />
+                    <Label htmlFor="firstName">{t('profile.name')}</Label>
+                    <Input id="firstName" defaultValue="Nombre" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName">Soyad</Label>
-                    <Input id="lastName" defaultValue="Yılmaz" />
+                    <Label htmlFor="secondName">{t('profile.secondname')}</Label>
+                    <Input id="lastName" defaultValue="Nombre 2" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">E-posta</Label>
+                    <Label htmlFor="lastName">{t('profile.lastname')}</Label>
+                    <Input id="firstName" defaultValue="AP" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="surName">{t('profile.surname')}</Label>
+                    <Input id="lastName" defaultValue="AM" />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">{t('profile.email')}</Label>
                     <Input id="email" type="email" defaultValue="ahmet@example.com" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Telefon</Label>
+                    <Label htmlFor="phone">{t('profile.phone')}</Label>
                     <Input id="phone" defaultValue="+90 555 123 45 67" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="company">Şirket</Label>
+                    <Label htmlFor="company">{t('profile.company')}</Label>
                     <Input id="company" defaultValue="TechCorp" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="position">Pozisyon</Label>
+                    <Label htmlFor="position">{t('profile.position')}</Label>
                     <Input id="position" defaultValue="Senior Developer" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="bio">Hakkında</Label>
+                  <Label htmlFor="bio">{t('profile.bio')}</Label>
                   <Textarea 
                     id="bio" 
-                    placeholder="Kendiniz hakkında kısa bir açıklama yazın..."
-                    defaultValue="Deneyimli yazılım geliştirici, modern web teknolojileri konusunda uzman."
+                    placeholder="Aqui va alguna información sobre ti..."
+                    defaultValue="Soy un..."
                     rows={3}
                   />
                 </div>
 
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <Label>Profil Görünürlüğü</Label>
+                    <Label>{t('profile.visibilityprofiletittle')}</Label>
                     <p className="text-sm text-muted-foreground">
-                      Profilinizi diğer kullanıcılar görebilsin
+                      {t('profile.visibilityprofile')}
                     </p>
                   </div>
                   <Switch defaultChecked />
@@ -259,10 +267,10 @@ export default function Settings() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Bell className="h-5 w-5" />
-                  Bildirim Ayarları
+                  {t('notifications.notificationsettings')}
                 </CardTitle>
                 <CardDescription>
-                  Bildirim tercihlerinizi ve kanallarınızı yapılandırın
+                  {t('notifications.notificationpreferences')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">

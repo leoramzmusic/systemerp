@@ -23,15 +23,15 @@ export default function AppSidebar() {
 
   const items = [
     { title: t('nav.dashboard'), url: "/admin", icon: LayoutDashboard },
-    { title: t('nav.analytics'), url: "/analytics", icon: BarChart3 },
-    { title: t('nav.tables'), url: "/tables", icon: Table2 },
-    { title: t('nav.forms'), url: "/forms", icon: FileInput },
-    { title: t('nav.users'), url: "/users", icon: Users },
-    { title: t('nav.roles'), url: "/roles", icon: Shield },
-    { title: t('nav.profile'), url: "/profile", icon: User },
+    { title: t('nav.analytics'), url: "/admin/analytics", icon: BarChart3 },
+    { title: t('nav.tables'), url: "/admin/tables", icon: Table2 },
+    { title: t('nav.forms'), url: "/admin/forms", icon: FileInput },
+    { title: t('nav.users'), url: "/admin/users", icon: Users },
+    { title: t('nav.roles'), url: "/admin/roles", icon: Shield },
+    { title: t('nav.profile'), url: "/admin/profile", icon: User },
     { title: t('nav.notifications'), url: "/admin/notifications", icon: Bell },
     { title: t('nav.settings'), url: "/admin/settings", icon: Settings },
-    { title: "Component Showcase", url: "/showcase", icon: Palette },
+    { title: "Component Showcase", url: "/admin/showcase", icon: Palette },
     { title: t('nav.login'), url: "/login", icon: LogIn },
     { title: t('nav.register'), url: "/register", icon: UserPlus },
   ];
@@ -42,7 +42,7 @@ export default function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
-              <NavLink to="/" className="flex items-center gap-2 px-2 py-1.5 text-lg font-semibold">
+              <NavLink to="/admin" className="flex items-center gap-2 px-2 py-1.5 text-lg font-semibold">
                 <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                   A
                 </div>
@@ -77,7 +77,7 @@ export default function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
-              <NavLink to="/profile" className="flex items-center gap-2 px-2 py-1.5">
+              <NavLink to="/admin/profile" className="flex items-center gap-2 px-2 py-1.5">
                 <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-muted">
                   <User className="h-4 w-4" />
                 </div>
