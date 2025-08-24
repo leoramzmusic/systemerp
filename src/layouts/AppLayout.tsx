@@ -15,7 +15,7 @@ import { Sun, Moon, Monitor, Globe } from "lucide-react";
 
 export default function AppLayout() {
   const { theme, setTheme } = useTheme();
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
 
   const notifications = [
     {
@@ -45,7 +45,7 @@ export default function AppLayout() {
   ];
   useEffect(() => {
     toast({
-      title: "React19 Admin",
+      title: "Admin Template",
       description: "Hoş geldin! Şablonu keşfetmeye başla.",
     });
   }, []);
@@ -74,7 +74,7 @@ export default function AppLayout() {
   return (
     <SidebarProvider>
       <Helmet>
-        <title>React19 Admin – Modern React Admin Template</title>
+        <title>Admin – Modern React Admin Template</title>
         <meta name="description" content="Modern React admin template with dashboard, tables, forms and user management." />
       </Helmet>
 
@@ -85,7 +85,7 @@ export default function AppLayout() {
           <header className="h-14 flex items-center gap-3 px-4 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <SidebarTrigger className="" />
             <div className="flex items-center gap-2 font-semibold">
-              <span className="hidden sm:inline">React19 Admin</span>
+              <span className="hidden sm:inline">Admin Template</span>
             </div>
             <div className="ml-auto flex items-center gap-3">
               <div className="hidden md:flex items-center gap-2">
@@ -94,14 +94,22 @@ export default function AppLayout() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="tr" className="flex items-center gap-2">
+
+                    <SelectItem value="es" className="flex items-center gap-2">
                       <Globe className="h-4 w-4" />
-                      TR
+                      ES
                     </SelectItem>
+
                     <SelectItem value="en" className="flex items-center gap-2">
                       <Globe className="h-4 w-4" />
                       EN
                     </SelectItem>
+
+                    <SelectItem value="tr" className="flex items-center gap-2">
+                      <Globe className="h-4 w-4" />
+                      TR
+                    </SelectItem>
+
                   </SelectContent>
                 </Select>
                 
@@ -112,15 +120,15 @@ export default function AppLayout() {
                   <SelectContent>
                     <SelectItem value="light" className="flex items-center gap-2">
                       <Sun className="h-4 w-4" />
-                      Açık
+                      {t('settings.light')}
                     </SelectItem>
                     <SelectItem value="dark" className="flex items-center gap-2">
                       <Moon className="h-4 w-4" />
-                      Koyu
+                      {t('settings.dark')}
                     </SelectItem>
                     <SelectItem value="system" className="flex items-center gap-2">
                       <Monitor className="h-4 w-4" />
-                      Sistem
+                      {t('settings.system')}
                     </SelectItem>
                   </SelectContent>
                 </Select>
@@ -138,7 +146,7 @@ export default function AppLayout() {
               />
               
               <Avatar>
-                <AvatarFallback>AA</AvatarFallback>
+                <AvatarFallback>UP</AvatarFallback>
               </Avatar>
             </div>
           </header>

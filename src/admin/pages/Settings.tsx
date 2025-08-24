@@ -41,15 +41,15 @@ export default function Settings() {
   return (
     <>
       <Helmet>
-        <title>Ayarlar - React19 Admin</title>
+        <title>{t('nav.settings')} Admin</title>
         <meta name="description" content="Uygulama ayarlarını yönetin" />
       </Helmet>
 
       <div className="space-y-6">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Ayarlar</h1>
+          <h1 className="text-3xl font-bold tracking-tight">{t('nav.settings')}</h1>
           <p className="text-muted-foreground">
-            Uygulama ayarlarınızı ve tercihlerinizi yönetin
+            {t('settings.appDescription')}
           </p>
         </div>
 
@@ -86,10 +86,10 @@ export default function Settings() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <SettingsIcon className="h-5 w-5" />
-                  Genel Ayarlar
+                  {t('nav.settings')}
                 </CardTitle>
                 <CardDescription>
-                  Uygulama genel ayarlarını yapılandırın
+                  {t('settings.generalSettings')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -143,7 +143,7 @@ export default function Settings() {
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="dateFormat">Tarih Formatı</Label>
+                    <Label htmlFor="dateFormat">{t('settings.dateformat')}</Label>
                     <Select defaultValue="dd/mm/yyyy">
                       <SelectTrigger>
                         <SelectValue />
@@ -161,9 +161,9 @@ export default function Settings() {
 
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <Label>Otomatik Güncelleme</Label>
+                    <Label>{t('settings.automaticupdate')}</Label>
                     <p className="text-sm text-muted-foreground">
-                      Uygulama güncellemelerini otomatik olarak kontrol et
+                      {t('settings.automaticupdate2')}
                     </p>
                   </div>
                   <Switch defaultChecked />
@@ -171,9 +171,9 @@ export default function Settings() {
 
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <Label>Hata Raporlama</Label>
+                    <Label>{t('settings.reporterror')}</Label>
                     <p className="text-sm text-muted-foreground">
-                      Hata raporlarını geliştirici ekibine gönder
+                      {t('settings.sendreporterror')}
                     </p>
                   </div>
                   <Switch defaultChecked />
@@ -181,9 +181,9 @@ export default function Settings() {
 
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <Label>Kullanım İstatistikleri</Label>
+                    <Label>{t('settings.usagestadistics')}</Label>
                     <p className="text-sm text-muted-foreground">
-                      Anonim kullanım verilerini topla
+                      {t('settings.usagesdata')}
                     </p>
                   </div>
                   <Switch />
@@ -473,7 +473,7 @@ export default function Settings() {
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
                       <Label>{t('settings.theme')}</Label>
-                      <p className="text-sm text-muted-foreground">Uygulama temasını seçin</p>
+                      <p className="text-sm text-muted-foreground">Select app theme</p>
                     </div>
                     <div className="flex items-center gap-2">
                       <Button 
@@ -689,10 +689,10 @@ export default function Settings() {
         </Tabs>
 
         <div className="flex justify-end gap-3">
-          <Button variant="outline">İptal</Button>
+          <Button variant="outline">{t('settings.cancel')}</Button>
           <Button className="flex items-center gap-2">
             <Save className="h-4 w-4" />
-            Değişiklikleri Kaydet
+            {t('settings.save')}
           </Button>
         </div>
       </div>

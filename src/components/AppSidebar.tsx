@@ -46,7 +46,7 @@ export default function AppSidebar() {
                 <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                   A
                 </div>
-                <span className="hidden lg:inline">React19 Admin</span>
+                <span className="hidden lg:inline">Admin Template</span>
               </NavLink>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -55,7 +55,7 @@ export default function AppSidebar() {
       <SidebarContent>
         <SidebarInset>
           <SidebarGroup>
-            <SidebarGroupLabel>Ana Menü</SidebarGroupLabel>
+            <SidebarGroupLabel>Menu</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
                 {items.map((item) => (
@@ -82,8 +82,8 @@ export default function AppSidebar() {
                   <User className="h-4 w-4" />
                 </div>
                 <div className="hidden lg:block">
-                  <div className="text-sm font-medium">Samet UCA</div>
-                  <div className="text-xs text-muted-foreground">ahmet@example.com</div>
+                  <div className="text-sm font-medium">User Name</div>
+                  <div className="text-xs text-muted-foreground">useremail@example.com</div>
                 </div>
               </NavLink>
             </SidebarMenuButton>
